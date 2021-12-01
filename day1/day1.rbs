@@ -1,0 +1,17 @@
+class FileDoesNotExistException < Exception
+  public
+  def initialize: (String filename) -> FileDoesNotExistException
+
+  attr_reader message: String
+end
+
+class Sonar
+  private
+  def calculate_sliding_window: () -> void
+  def initialize: (Array[Integer] depth_list) -> Sonar
+
+  
+  public
+  def self.from_file: (String filename) -> Sonar
+  def scan : () -> Integer
+end
